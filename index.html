@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Envio de Arquivos | Emilia Cristina Arts</title>
+    <style>
+        * { 
+            box-sizing: border-box; 
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; 
+            margin: 0;
+            padding: 0;
+        }
+
+        body { 
+            background-color: #0d0d0f; 
+            color: #f4f4f5;
+            display: flex; 
+            justify-content: center; 
+            align-items: center; 
+            min-height: 100vh; 
+            padding: 16px; 
+        }
+
+        .container { 
+            background: #16161a; 
+            padding: 2.2rem 1.5rem; 
+            border-radius: 18px; 
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5); 
+            width: 100%; 
+            max-width: 420px; 
+            text-align: center; 
+            border: 1px solid #26262e;
+        }
+
+        .brand {
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 1.8px;
+            color: #c084fc;
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+
+        h1 { 
+            font-size: 1.45rem; 
+            color: #ffffff; 
+            margin-bottom: 8px;
+            font-weight: 600;
+        }
+
+        .subtitle { 
+            color: #a1a1aa; 
+            font-size: 0.9rem; 
+            line-height: 1.4; 
+            margin-bottom: 1.5rem; 
+        }
+        
+        .instructions-card { 
+            text-align: left; 
+            background: #1c1c24; 
+            border: 1px solid #2e2e3a; 
+            padding: 16px; 
+            border-radius: 12px; 
+            margin-bottom: 1.5rem; 
+        }
+
+        .instructions-card h2 {
+            font-size: 0.95rem;
+            color: #e9d5ff;
+            margin-bottom: 12px;
+        }
+
+        .steps {
+            list-style: none;
+            counter-reset: step-counter;
+        }
+
+        .steps li {
+            counter-increment: step-counter;
+            position: relative;
+            padding-left: 30px;
+            margin-bottom: 12px;
+            font-size: 0.88rem;
+            color: #d4d4d8;
+            line-height: 1.4;
+        }
+
+        .steps li::before {
+            content: counter(step-counter);
+            position: absolute;
+            left: 0;
+            top: 1px;
+            background: #2e1065;
+            color: #c084fc;
+            border: 1px solid #581c87;
+            font-weight: bold;
+            font-size: 0.75rem;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .steps li:last-child {
+            margin-bottom: 0;
+        }
+
+        .btn-enviar {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            width: 100%;
+            padding: 16px;
+            background: linear-gradient(135deg, #7e22ce, #6b21a8);
+            color: #ffffff;
+            text-decoration: none;
+            border-radius: 12px;
+            font-weight: 600;
+            font-size: 1rem;
+            transition: all 0.2s ease;
+            box-shadow: 0 4px 14px rgba(126, 34, 206, 0.4);
+        }
+
+        .btn-enviar:active { 
+            transform: scale(0.98); 
+            background: linear-gradient(135deg, #6b21a8, #581c87);
+            box-shadow: 0 2px 8px rgba(126, 34, 206, 0.3);
+        }
+
+        .footer-note {
+            margin-top: 1.2rem;
+            font-size: 0.78rem;
+            color: #71717a;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="brand">Emilia Cristina Arts</div>
+    <h1>Envio de Vídeo / Arquivo</h1>
+    <p class="subtitle">Espaço seguro para enviar seus vídeos sem perder a qualidade original.</p>
+    
+    <div class="instructions-card">
+        <h2>Como enviar pelo celular:</h2>
+        <ol class="steps">
+            <li>Toque no botão roxo <strong>"Abrir Pasta Segura"</strong>.</li>
+            <li>Toque no sinal de <strong>+ (Mais)</strong> ou no botão <strong>Novo / Adicionar</strong>.</li>
+            <li>Escolha seu vídeo na galeria e aguarde carregar.</li>
+        </ol>
+    </div>
+
+    <!-- COLE O LINK DA PASTA DO GOOGLE DRIVE DENTRO DAS ASPAS ABAIXO -->
+    <a href="https://drive.google.com/drive/folders/18azWRSaBsA3zoak_AccufpW9hWvqCRfP?usp=sharing" target="_blank" class="btn-enviar">
+        <span>📁</span> Abrir Pasta Segura
+    </a>
+
+    <p class="footer-note">Qualquer dúvida, é só me chamar no WhatsApp!</p>
+</div>
+
+</body>
+</html>
